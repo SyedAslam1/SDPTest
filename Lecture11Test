@@ -1,8 +1,6 @@
-package Week_7;
-
+package SDPtest;
 import java.util.Scanner;
-
-public class Lecture11Test {
+public class SDPtest {
 
 	public static void main(String[] args) {
 
@@ -18,18 +16,15 @@ public class Lecture11Test {
 		System.out.println("| 6. Exit                                                |");
 		System.out.println(" --------------------------------------------------------");
 
-		int userinput = 6;
-
-		label: while (userinput != 6) {
-			userinput = 212;
+		int userInput = 0;
+		
+		label: while (userInput != 6) {
 			System.out.print("\n Enter a choice and Press ENTER to continue[1-6]:");
 			Scanner input = new Scanner(System.in);
-			userinput = input.nextint();
-			
-			userinput = 6;
+			userInput = input.nextInt();
 
-			switch (userinput) {
-			
+			switch (userInput) {
+
 
 			case 1:
 				System.out.print("\n Print Records");
@@ -39,12 +34,12 @@ public class Lecture11Test {
 			case 2:
 
 				System.out.print("\n Add a record");
-				
+
 				continue label;
 
 			case 3:
 				System.out.print("\n Update a Record");
-				
+
 				continue label;
 
 			case 4:
@@ -53,7 +48,7 @@ public class Lecture11Test {
 
 			case 5:
 				System.out.print("\n Prints Daily Activties");
-				
+
 				continue label;
 
 			case 6:
